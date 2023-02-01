@@ -11,7 +11,7 @@ router.get('/', (req, res) => {
     .toArray()
     .then((docs) => res.json(docs))
     .catch((err) => {
-        console.error(err);
+        console.error(err);qs                           
         res.status(500);
         res.json({ status: 500, error: err });
     });
